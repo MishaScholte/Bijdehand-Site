@@ -1,12 +1,17 @@
 import type { NextConfig } from "next";
 
 const isProd = process.env.NODE_ENV === 'production';
+const repoName = "Bijdehand-Site";
+// CHANGE ME to your repo name if different, though user said https://github.com/MishaScholte/Bijdehand-Site
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isProd ? "/Bijdehand-Site" : "",
+  basePath: isProd ? `/${repoName}` : "",
   images: {
     unoptimized: true,
+  },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : "",
   },
 };
 
