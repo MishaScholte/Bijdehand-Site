@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import HeroImage from "@/app/assets/Hero.png";
 
 export function HeroSection() {
