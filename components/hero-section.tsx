@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/image"; // Keep for AppIcon if used, or standard usage elsewhere
 import HeroImage from "@/app/assets/Hero.png";
+import HeroMobile from "@/app/assets/Hero-mobile.png";
 
 export function HeroSection() {
     return (
@@ -56,15 +57,17 @@ export function HeroSection() {
                 <div className="flex justify-center md:justify-end relative w-full h-auto md:h-full mt-[-40px] md:mt-0">
                     <div className="relative w-full md:w-auto h-auto md:h-[874px] transition-all duration-500 flex items-start md:items-center justify-center">
                         <div className="relative w-full h-full flex items-center justify-center">
-                            <Image
-                                src={HeroImage}
-                                alt="Bijdehand App Hero"
-                                width={2721}
-                                height={2622}
-                                className="object-contain w-full h-auto md:w-auto md:h-full max-h-[600px] md:max-h-[874px]"
-                                priority
-                                sizes="(max-width: 768px) 100vw, 907px"
-                            />
+                            <picture>
+                                <source media="(max-width: 768px)" srcSet={HeroMobile.src} />
+                                <img
+                                    src={HeroImage.src}
+                                    alt="Bijdehand App Hero"
+                                    width={2721}
+                                    height={2622}
+                                    className="object-contain w-full h-auto md:w-auto md:h-full max-h-[600px] md:max-h-[874px]"
+                                    loading="eager"
+                                />
+                            </picture>
                         </div>
                     </div>
                 </div>
