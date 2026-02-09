@@ -48,11 +48,6 @@ const config: Config = {
                     },
                 },
             },
-            animation: {
-                shimmer: "shimmer 2s linear infinite",
-                spotlight: "spotlight 2s ease .75s 1 forwards",
-                "spin-gradient": "spin-gradient 5s linear infinite",
-            },
         },
     },
     plugins: [addVariablesForColors],
