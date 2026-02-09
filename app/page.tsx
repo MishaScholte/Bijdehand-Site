@@ -8,6 +8,7 @@ import {
   Wallet,
   Cloud,
   LayoutGrid,
+  Ticket,
   EyeOff
 } from "lucide-react";
 
@@ -69,6 +70,22 @@ export default function Home() {
               label="stap je over"
               numberClassName="text-6xl"
               className="md:col-span-1"
+            />
+
+            {/* Row 4: Placeholder + Vouchers */}
+            <BentoNumberCard
+              number="?"
+              label="Binnenkort beschikbaar"
+              className="md:col-span-1"
+            />
+            <BentoFeatureCard
+              title="Sla je tegoedbonnen veilig op"
+              description="Voorkom dat je geld verliest en ontvang een melding voordat de bon verloopt"
+              icon={Ticket}
+              iconColor="text-white"
+              iconBgClass="bg-gradient-to-br from-red-500 to-red-700 border border-white/20"
+              iconClassName="w-16 h-16"
+              className="md:col-span-2"
             />
 
           </BentoGrid>
