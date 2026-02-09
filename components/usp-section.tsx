@@ -45,20 +45,20 @@ export function USPSection() {
         {
             title: "Private by design",
             icon: ShieldUser,
-            iconBgClass: "bg-gradient-to-br from-blue-500/20 to-blue-600/20 border-blue-500/20",
-            iconColor: "text-blue-100",
+            iconBgClass: "bg-gradient-to-br from-blue-400 to-blue-600 border-white/20",
+            iconColor: "text-white",
         },
         {
             title: "Slimme locaties",
             icon: MapPin,
-            iconBgClass: "bg-gradient-to-br from-purple-500/20 to-purple-600/20 border-purple-500/20",
-            iconColor: "text-purple-100",
+            iconBgClass: "bg-gradient-to-br from-purple-400 to-purple-600 border-white/20",
+            iconColor: "text-white",
         },
         {
             title: "Widgets & Wallet",
             icon: Wallet,
-            iconBgClass: "bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 border-yellow-500/20",
-            iconColor: "text-yellow-100",
+            iconBgClass: "bg-gradient-to-br from-yellow-400 to-yellow-600 border-white/20",
+            iconColor: "text-black",
         },
     ];
 
