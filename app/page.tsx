@@ -88,6 +88,22 @@ export default function Home() {
               className="col-span-2"
             />
 
+            {/* Row 5: Widgets + Format */}
+            <BentoFeatureCard
+              title="Snelle toegang met widgets"
+              description="Met widgets zet je klantenpassen direct op je startscherm. Personaliseer de widget zelf met je favoriete passen."
+              icon={LayoutGrid}
+              iconColor="text-white"
+              iconBgClass="bg-gradient-to-br from-green-400 to-green-600 border border-white/20"
+              iconClassName="w-6 h-6 md:w-16 md:h-16"
+              className="col-span-2"
+            />
+            <BentoNumberCard
+              number="3"
+              label="widget formaten"
+              className="col-span-1"
+            />
+
           </BentoGrid>
         </div>
       </section>
