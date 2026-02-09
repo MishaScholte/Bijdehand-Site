@@ -29,20 +29,20 @@ export default function Home() {
               icon={ShieldUser}
               iconColor="text-white"
               iconBgClass="bg-gradient-to-br from-blue-400 to-blue-600 border border-white/20"
-              iconClassName="w-16 h-16"
-              className="md:col-span-2"
+              iconClassName="w-10 h-10 md:w-16 md:h-16"
+              className="col-span-2"
             />
             <BentoNumberCard
               number="350+"
               label="ontworpen klantenpassen"
-              className="md:col-span-1"
+              className="col-span-1"
             />
 
             {/* Row 2: Battery + Smart Locations */}
             <BentoNumberCard
               number="0%"
               label="Batterij impact"
-              className="md:col-span-1"
+              className="col-span-1"
             />
             <BentoFeatureCard
               title="Slimme Locaties"
@@ -50,8 +50,8 @@ export default function Home() {
               icon={MapPinned}
               iconColor="text-white"
               iconBgClass="bg-gradient-to-br from-purple-400 to-purple-600 border border-white/20"
-              iconClassName="w-16 h-16"
-              className="md:col-span-2"
+              iconClassName="w-10 h-10 md:w-16 md:h-16"
+              className="col-span-2"
             />
 
             {/* Row 3: Apple Wallet + Placeholder */}
@@ -61,22 +61,22 @@ export default function Home() {
               icon={Wallet}
               iconColor="text-black"
               iconBgClass="bg-gradient-to-br from-yellow-400 to-yellow-600 border border-white/20"
-              iconClassName="w-16 h-16"
-              className="md:col-span-2"
+              iconClassName="w-10 h-10 md:w-16 md:h-16"
+              className="col-span-2"
             />
             <BentoNumberCard
               topLabel="In slechts"
               number="3 tikken"
               label="stap je over"
-              numberClassName="text-6xl"
-              className="md:col-span-1"
+              numberClassName="text-3xl md:text-6xl"
+              className="col-span-1"
             />
 
             {/* Row 4: Placeholder + Vouchers */}
             <BentoNumberCard
               number="?"
               label="Binnenkort beschikbaar"
-              className="md:col-span-1"
+              className="col-span-1"
             />
             <BentoFeatureCard
               title="Sla je tegoedbonnen veilig op"
@@ -84,8 +84,8 @@ export default function Home() {
               icon={Ticket}
               iconColor="text-white"
               iconBgClass="bg-gradient-to-br from-orange-400 to-orange-600 border border-white/20"
-              iconClassName="w-16 h-16"
-              className="md:col-span-2"
+              iconClassName="w-10 h-10 md:w-16 md:h-16"
+              className="col-span-2"
             />
 
           </BentoGrid>
