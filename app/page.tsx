@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 import { BentoGrid, BentoGridItem, BentoFeatureCard, BentoNumberCard } from "@/components/ui/bento-grid";
 import {
   ShieldUser,
-  MapPin,
+  MapPinned,
   Wallet,
   Cloud,
   LayoutGrid,
@@ -46,8 +46,10 @@ export default function Home() {
             <BentoFeatureCard
               title="Slimme Locaties"
               description="De juiste pas verschijnt automatisch op je vergrendelscherm als je in de buurt van de winkel bent."
-              icon={MapPin}
-              iconColor="text-primary-purple"
+              icon={MapPinned}
+              iconColor="text-white"
+              iconBgClass="bg-gradient-to-br from-purple-400 to-purple-600 border border-white/20"
+              iconClassName="w-16 h-16"
               className="md:col-span-2"
             />
 
