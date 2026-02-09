@@ -87,7 +87,7 @@ export const BentoFeatureCard = ({
                     </div>
                 </div>
             }
-            className={cn("bg-white/5 border-none", className)}
+            className={cn("bg-white/5 border-none p-8", className)}
         />
     );
 };
