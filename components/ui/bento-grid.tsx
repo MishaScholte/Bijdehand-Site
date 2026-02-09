@@ -58,3 +58,32 @@ export const BentoGridItem = ({
         </div>
     );
 };
+
+export const BentoFeatureCard = ({
+    title,
+    description,
+    icon: Icon,
+    iconColor = "text-primary-purple",
+    className,
+}: {
+    title: string;
+    description: string;
+    icon: React.ElementType;
+    iconColor?: string;
+    className?: string;
+}) => {
+    return (
+        <BentoGridItem
+            title={<span className="text-3xl text-neutral-200">{title}</span>}
+            description={description}
+            header={
+                <div className="flex flex-1 w-full h-full min-h-[6rem] items-center justify-start">
+                    <div className="w-24 h-24 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center">
+                        <Icon className={cn("w-8 h-8", iconColor)} />
+                    </div>
+                </div>
+            }
+            className={className}
+        />
+    );
+};
