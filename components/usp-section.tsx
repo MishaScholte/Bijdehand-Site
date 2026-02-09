@@ -21,7 +21,7 @@ const KnockoutCard = ({
         <div
             className={cn(
                 "group relative flex flex-col items-start justify-center p-6 md:p-8",
-                "bg-black rounded-2xl",
+                "bg-black rounded-[48px]",
                 "border border-white/10", // Subtle glassy border
                 "transition-all duration-200 hover:border-white/20 hover:bg-white/[0.02]",
                 className
