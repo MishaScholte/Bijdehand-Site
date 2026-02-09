@@ -54,7 +54,7 @@ export function USPSection() {
             description: (
                 <div className="space-y-2">
                     {["Geen accounts", "Geen cookies", "Geen reclame"].map((item, i) => (
-                        <div key={i} className="flex items-center space-x-2">
+                        <div key={i} className="flex items-center space-x-1">
                             <Check className="w-4 h-4 text-green-500" />
                             <span className="text-neutral-400 text-sm md:text-base">{item}</span>
                         </div>
