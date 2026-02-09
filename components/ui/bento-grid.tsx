@@ -95,10 +95,14 @@ export const BentoFeatureCard = ({
 export const BentoNumberCard = ({
     number,
     label,
+    topLabel,
+    numberClassName,
     className,
 }: {
     number: string;
     label: string;
+    topLabel?: string;
+    numberClassName?: string;
     className?: string;
 }) => {
     return (
@@ -108,7 +112,17 @@ export const BentoNumberCard = ({
                 className
             )}
         >
-            <span className="text-8xl font-bold text-white tracking-tight">
+            {topLabel && (
+                <span className="font-sans font-normal text-neutral-400 text-sm">
+                    {topLabel}
+                </span>
+            )}
+            <span
+                className={cn(
+                    "text-8xl font-bold text-white tracking-tight",
+                    numberClassName
+                )}
+            >
                 {number}
             </span>
             <span className="font-sans font-normal text-neutral-400 text-sm">
