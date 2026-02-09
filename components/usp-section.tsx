@@ -35,6 +35,35 @@ const IconDesignGuide = () => {
     );
 };
 
+const DotGridPattern = () => {
+    return (
+        <div
+            className="absolute inset-0 pointer-events-none select-none"
+            style={{
+                maskImage: "linear-gradient(to top right, white 0%, transparent 100%)",
+                WebkitMaskImage: "linear-gradient(to top right, white 0%, transparent 100%)",
+            }}
+        >
+            <svg
+                className="absolute inset-0 w-full h-full"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <pattern
+                    id="dot-grid"
+                    x="0"
+                    y="0"
+                    width="20"
+                    height="20"
+                    patternUnits="userSpaceOnUse"
+                >
+                    <circle cx="2" cy="2" r="1.5" className="fill-white" fillOpacity="0.3" />
+                </pattern>
+                <rect width="100%" height="100%" fill="url(#dot-grid)" />
+            </svg>
+        </div>
+    );
+};
+
 interface KnockoutCardProps {
     title: string;
     description?: string | React.ReactNode;
@@ -43,6 +72,7 @@ interface KnockoutCardProps {
     iconColor?: string;
     className?: string;
     iconOverlay?: React.ReactNode;
+    background?: React.ReactNode;
 }
 
 const KnockoutCard = ({
@@ -53,6 +83,7 @@ const KnockoutCard = ({
     iconColor,
     className,
     iconOverlay,
+    background,
 }: KnockoutCardProps) => {
     return (
         <div
@@ -64,6 +95,8 @@ const KnockoutCard = ({
                 className
             )}
         >
+            {background}
+
             {/* Icon */}
             <div className={cn("relative z-10 mb-4 p-4 rounded-2xl border overflow-hidden", iconBgClass)}>
                 <Icon className={cn("relative z-10 w-6 h-6 md:w-10 md:h-10", iconColor || "text-neutral-200")} />
@@ -108,6 +141,7 @@ export function USPSection() {
             icon: MapPin,
             iconBgClass: "bg-gradient-to-br from-purple-400 to-purple-600 border-white/20",
             iconColor: "text-white",
+            background: <DotGridPattern />,
         },
         {
             title: "Widgets & Wallet",
@@ -131,6 +165,7 @@ export function USPSection() {
                             iconBgClass={feature.iconBgClass}
                             iconColor={feature.iconColor}
                             iconOverlay={feature.iconOverlay}
+                            background={feature.background}
                         />
                     ))}
                 </div>
