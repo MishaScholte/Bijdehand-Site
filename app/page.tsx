@@ -1,4 +1,4 @@
-```
+
 import { HeroSection } from "@/components/hero-section";
 import { Footer } from "@/components/footer";
 import { BentoGrid, BentoGridItem, BentoFeatureCard } from "@/components/ui/bento-grid";
@@ -25,11 +25,11 @@ export default function Home() {
           <BentoGrid className="max-w-4xl mx-auto">
             {/* Card 1: Privacy (Feature Card Template) */}
             <BentoFeatureCard
-                title="Private by design"
-                description="Jouw data is jouw data. Geen accounts. Geen reclame. Geen cookies."
-                icon={EyeOff}
-                iconColor="text-primary-purple"
-                className="md:col-span-2"
+              title="Private by design"
+              description="Jouw data is jouw data. Geen accounts. Geen reclame. Geen cookies."
+              icon={EyeOff}
+              iconColor="text-primary-purple"
+              className="md:col-span-2"
             />
 
             {/* Card 2: No Ads (Number) */}
