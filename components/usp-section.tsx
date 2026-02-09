@@ -7,8 +7,9 @@ const KeyframesStyle = () => (
     <style dangerouslySetInnerHTML={{
         __html: `
         @keyframes pulse-dot {
-            0%, 100% { opacity: 0.3; }
-            50% { opacity: 1; }
+            0% { opacity: 0.1; }
+            10% { opacity: 1; }
+            20%, 100% { opacity: 0.1; }
         }
     `}} />
 );
@@ -58,8 +59,8 @@ const DotGridPattern = () => {
             const shouldAnimate = Math.random() < 0.1; // 10% chance
             const delay = Math.random() * 3 + "s"; // Random delay up to 3s
             const style = shouldAnimate
-                ? { animation: `pulse-dot 3s infinite ${delay}`, opacity: 0.3 }
-                : { opacity: 0.3 };
+                ? { animation: `pulse-dot 3s infinite ${delay}`, opacity: 0.1 }
+                : { opacity: 0.1 };
 
             dots.push(
                 <circle
