@@ -17,7 +17,7 @@ export function HeroSection() {
                         Al je pasjes,<br />
                         altijd <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-purple">Bijdehand</span>.
                     </h1>
-                    <p className="mt-2 md:mt-6 font-semibold text-xl md:text-2xl text-neutral-300 max-w-lg text-balance">
+                    <p className="mt-2 md:mt-6 font-normal text-xl md:text-2xl text-neutral-300 max-w-lg text-balance">
                         Eindelijk. Een app voor klantenpassen zonder reclame, accounts of cookies.
                     </p>
 
