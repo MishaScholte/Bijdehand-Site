@@ -207,7 +207,6 @@ export function USPSection() {
             icon: Wallet,
             iconBgClass: "bg-gradient-to-br from-orange-400 to-orange-600 border-white/20",
             iconColor: "text-white",
-            background: <PlusGridPattern />,
         },
     ];
 

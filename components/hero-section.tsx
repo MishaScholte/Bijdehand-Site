@@ -24,7 +24,7 @@ export function HeroSection() {
                     <div className="flex justify-center md:justify-start mt-6 md:mt-10">
                         {/* Sleep Cycle Style Button - Simplified & Robust Implementation */}
                         <a
-                            href="#"
+                            href="https://apps.apple.com/nl/app/bijdehand-klantenpassen/id6756604756"
                             className="relative inline-flex group"
                         >
                             {/* Outer Glow */}
