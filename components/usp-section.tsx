@@ -12,42 +12,65 @@ const TechnicalSchematic = () => {
             }}
         >
             <svg
-                className="absolute inset-0 w-full h-full opacity-[0.4]"
+                className="absolute inset-0 w-full h-full opacity-[0.5]"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
             >
-                {/* Top Right - Detailed Data Grid */}
-                <path d="M 70 5 H 95 M 70 10 H 95 M 70 15 H 95 M 70 20 H 95 M 70 25 H 95" stroke="#60a5fa" strokeWidth="0.2" strokeOpacity="0.4" />
-                <path d="M 75 5 V 25 M 80 5 V 25 M 85 5 V 25 M 90 5 V 25" stroke="#60a5fa" strokeWidth="0.2" strokeOpacity="0.4" />
-
-                {/* Top Right - Angled Hatch Lines (Technical feel) */}
-                <path d="M 95 0 L 100 5 M 90 0 L 100 10 M 85 0 L 100 15" stroke="#60a5fa" strokeWidth="0.2" strokeOpacity="0.3" />
-
-                {/* Main Arc - Thinner and more subtle */}
+                {/* Grid - Very subtle */}
                 <path
-                    d="M 15 90 A 75 75 0 0 1 90 15"
+                    d="M 10 0 V 100 M 20 0 V 100 M 30 0 V 100 M 40 0 V 100 M 50 0 V 100 M 60 0 V 100 M 70 0 V 100 M 80 0 V 100 M 90 0 V 100
+                       M 0 10 H 100 M 0 20 H 100 M 0 30 H 100 M 0 40 H 100 M 0 50 H 100 M 0 60 H 100 M 0 70 H 100 M 0 80 H 100 M 0 90 H 100"
                     fill="none"
-                    stroke="#60a5fa"
-                    strokeWidth="0.3"
-                    strokeOpacity="0.3"
-                />
-
-                {/* Secondary Dashed Arc - Subtle */}
-                <path
-                    d="M 20 85 A 65 65 0 0 1 85 20"
-                    fill="none"
-                    stroke="#93c5fd" // Lighter blue
+                    stroke="#bdc3c7" // light gray
                     strokeWidth="0.2"
                     strokeOpacity="0.2"
-                    strokeDasharray="2 3"
                 />
 
-                {/* Right Edge - Scale Markings */}
-                <path d="M 98 30 H 100 M 98 35 H 100 M 98 40 H 100 M 95 45 H 100 M 98 50 H 100" stroke="#60a5fa" strokeWidth="0.2" strokeOpacity="0.3" />
+                {/* Primary Arc - Focusing on "Shield" / Security concept */}
+                <path
+                    d="M 20 80 A 60 60 0 0 1 80 20"
+                    fill="none"
+                    stroke="#60a5fa" // blue-400
+                    strokeWidth="1"
+                    strokeOpacity="0.8"
+                />
 
-                {/* Bottom Left - Minimal corner detail */}
-                <path d="M 0 95 H 5 M 0 90 H 3" stroke="#60a5fa" strokeWidth="0.3" strokeOpacity="0.3" />
+                {/* Secondary Arc - Partial */}
+                <path
+                    d="M 25 75 A 50 50 0 0 1 75 25"
+                    fill="none"
+                    stroke="#60a5fa"
+                    strokeWidth="0.5"
+                    strokeOpacity="0.5"
+                    strokeDasharray="4 2"
+                />
+
+                {/* Center Lines - Precision */}
+                <path
+                    d="M 50 10 V 90 M 10 50 H 90"
+                    fill="none"
+                    stroke="#93c5fd" // blue-300
+                    strokeWidth="0.5"
+                    strokeOpacity="0.6"
+                    strokeDasharray="10 5"
+                />
+
+                {/* Dimension Line - Technical feel */}
+                <path
+                    d="M 85 20 V 80"
+                    fill="none"
+                    stroke="#60a5fa"
+                    strokeWidth="0.5"
+                    strokeOpacity="0.4"
+                />
+                {/* Arrowheads for dimension */}
+                <path d="M 82 25 L 85 20 L 88 25" fill="none" stroke="#60a5fa" strokeWidth="0.5" />
+                <path d="M 82 75 L 85 80 L 88 75" fill="none" stroke="#60a5fa" strokeWidth="0.5" />
+
+                {/* Technical Text Stub (abstract) */}
+                <rect x="87" y="45" width="2" height="10" fill="#60a5fa" fillOpacity="0.4" />
+
             </svg>
         </div>
     );
