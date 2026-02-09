@@ -28,8 +28,8 @@ const KnockoutCard = ({
             )}
         >
             {/* Icon */}
-            <div className={cn("mb-4 p-3 md:p-4 rounded-full border", iconBgClass)}>
-                <Icon className={cn("w-8 h-8 md:w-16 md:h-16", iconColor || "text-neutral-200")} />
+            <div className={cn("mb-4 p-3 md:p-6 rounded-full border", iconBgClass)}>
+                <Icon className={cn("w-8 h-8 md:w-12 md:h-12", iconColor || "text-neutral-200")} />
             </div>
 
             {/* Title */}
