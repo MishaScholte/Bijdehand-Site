@@ -18,9 +18,7 @@ export default function Home() {
 
       <section className="py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <h2 className="text-3xl md:text-5xl font-bold text-center text-white mb-12">
-            Waarom <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-purple">Bijdehand</span>?
-          </h2>
+
 
           <BentoGrid className="max-w-4xl mx-auto">
             {/* Card 1: Privacy (Feature Card Template) */}
