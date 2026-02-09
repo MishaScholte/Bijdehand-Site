@@ -1,16 +1,20 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Shield, MapPin, Wallet } from "lucide-react";
+import { ShieldUser, MapPin, Wallet } from "lucide-react";
 
 interface KnockoutCardProps {
     title: string;
     icon: React.ElementType;
+    iconBgClass?: string;
+    iconColor?: string;
     className?: string;
 }
 
 const KnockoutCard = ({
     title,
     icon: Icon,
+    iconBgClass,
+    iconColor,
     className,
 }: KnockoutCardProps) => {
     return (
@@ -24,8 +28,8 @@ const KnockoutCard = ({
             )}
         >
             {/* Icon */}
-            <div className="mb-4 p-3 md:p-4 rounded-full bg-white/5 border border-white/5">
-                <Icon className="w-8 h-8 md:w-16 md:h-16 text-neutral-200" />
+            <div className={cn("mb-4 p-3 md:p-4 rounded-full border", iconBgClass)}>
+                <Icon className={cn("w-8 h-8 md:w-16 md:h-16", iconColor || "text-neutral-200")} />
             </div>
 
             {/* Title */}
@@ -40,15 +44,21 @@ export function USPSection() {
     const features = [
         {
             title: "Private by design",
-            icon: Shield,
+            icon: ShieldUser,
+            iconBgClass: "bg-gradient-to-br from-blue-500/20 to-blue-600/20 border-blue-500/20",
+            iconColor: "text-blue-100",
         },
         {
             title: "Slimme locaties",
             icon: MapPin,
+            iconBgClass: "bg-gradient-to-br from-purple-500/20 to-purple-600/20 border-purple-500/20",
+            iconColor: "text-purple-100",
         },
         {
             title: "Widgets & Wallet",
             icon: Wallet,
+            iconBgClass: "bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 border-yellow-500/20",
+            iconColor: "text-yellow-100",
         },
     ];
 
@@ -61,6 +71,8 @@ export function USPSection() {
                             key={index}
                             title={feature.title}
                             icon={feature.icon}
+                            iconBgClass={feature.iconBgClass}
+                            iconColor={feature.iconColor}
                         />
                     ))}
                 </div>
