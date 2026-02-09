@@ -29,7 +29,7 @@ export default function Home() {
               icon={ShieldUser}
               iconColor="text-white"
               iconBgClass="bg-gradient-to-br from-blue-400 to-blue-600 border border-white/20"
-              iconClassName="w-10 h-10 md:w-16 md:h-16"
+              iconClassName="w-6 h-6 md:w-16 md:h-16"
               className="col-span-2"
             />
             <BentoNumberCard
@@ -50,7 +50,7 @@ export default function Home() {
               icon={MapPinned}
               iconColor="text-white"
               iconBgClass="bg-gradient-to-br from-purple-400 to-purple-600 border border-white/20"
-              iconClassName="w-10 h-10 md:w-16 md:h-16"
+              iconClassName="w-6 h-6 md:w-16 md:h-16"
               className="col-span-2"
             />
 
@@ -61,7 +61,7 @@ export default function Home() {
               icon={Wallet}
               iconColor="text-black"
               iconBgClass="bg-gradient-to-br from-yellow-400 to-yellow-600 border border-white/20"
-              iconClassName="w-10 h-10 md:w-16 md:h-16"
+              iconClassName="w-6 h-6 md:w-16 md:h-16"
               className="col-span-2"
             />
             <BentoNumberCard
@@ -84,7 +84,7 @@ export default function Home() {
               icon={Ticket}
               iconColor="text-white"
               iconBgClass="bg-gradient-to-br from-orange-400 to-orange-600 border border-white/20"
-              iconClassName="w-10 h-10 md:w-16 md:h-16"
+              iconClassName="w-6 h-6 md:w-16 md:h-16"
               className="col-span-2"
             />
 
