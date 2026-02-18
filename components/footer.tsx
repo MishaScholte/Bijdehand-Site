@@ -13,7 +13,7 @@ export function Footer() {
                     Privacy Policy
                 </Link>
                 <a
-                    href="mailto:support@bijdehand.app"
+                    href="mailto:bijdehandapp@proton.me"
                     className="hover:text-white transition-colors underline"
                 >
                     Support

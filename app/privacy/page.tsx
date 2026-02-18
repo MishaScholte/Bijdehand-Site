@@ -77,7 +77,7 @@ export default function PrivacyPage() {
                     <section>
                         <h2 className="text-xl font-semibold text-white mb-3">7. Contact</h2>
                         <p>
-                            Als je vragen hebt over dit beleid, neem dan contact op via <a href="mailto:support@bijdehand.app" className="text-primary hover:text-primary-purple transition-colors">bijdehandapp@proton.me</a> (of support@bijdehand.app).
+                            Als je vragen hebt over dit beleid, neem dan contact op via <a href="mailto:bijdehandapp@proton.me" className="text-primary hover:text-primary-purple transition-colors">bijdehandapp@proton.me</a>.
                         </p>
                     </section>
                 </div>
